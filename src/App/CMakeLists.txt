@@ -1,22 +1,22 @@
 set(SRCS
-    main.cpp
-    Window.cpp
-    Window.h
+        main.cpp
+        fractal.cpp
+        fractal.h
 
-    Shaders/diffuse.fs
-    Shaders/diffuse.vs
-    Textures/voronoi.png
-
-    resources.qrc
-)
+        shaders.qrc
+        Shaders/fractal.fs
+        Shaders/fractal.vs
+        )
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
-add_executable(demo-app ${SRCS})
+add_executable(demo-app ${SRCS}
+
+
+        mainwindow.h mainwindow.cpp)
 
 target_link_libraries(demo-app
-    PRIVATE
+        PRIVATE
         Qt5::Widgets
         FGL::Base
-        thirdparty::tinygltf
-)
+        )
