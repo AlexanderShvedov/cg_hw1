@@ -1,5 +1,7 @@
 ![build_cmake_status](https://github.com/sadads1337/mse-gl-hw-template/actions/workflows/build_cmake.yml/badge.svg)
-
+![Screenshot](screenshot1.png)
+![Screenshot](screenshot2.png)
+![Screenshot](screenshot3.png)
 # ITMO MSE OpenGL homework template 2022
 
 Qt based demo project to demonstrate how to use and implement basic 3D graphics features.
